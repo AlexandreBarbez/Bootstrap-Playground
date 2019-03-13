@@ -1,0 +1,35 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;   
+    overflow: hidden;  /*makes the body non-scrollable (we will add scrolling to the sidebar and main content containers)*/
+    margin: 0px;  /*removes default style*/
+    display: flex;  /*enables flex content for its children*/
+    box-sizing: border-box;
+}
+div.mainContent>div:nth-child(even){
+    color:green;
+}
+
+/*LEFT MENU*/
+.leftHeader {
+    background-color: #4f5763;
+}
+
+.menuContent {
+    background-color: #6c737c;
+}
+
+/*MAIN CONTENT*/
+.mainContent {
+    color:blue;
+    width: 100%;
+}
+
+.top-right {
+    flex-shrink: 0;
+    display: inline-flex;
+    background-color: #adb2ba;
+}
